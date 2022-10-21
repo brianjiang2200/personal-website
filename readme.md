@@ -1,8 +1,6 @@
-# zenorocha.com
+# hb.jiang
 
-> My personal website <3
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fzenorocha%2Fzenorocha.com)
+> Personal website initially forked from [Zeno Rocha's site](https://zenorocha.com/)
 
 ## Technology stack
 
