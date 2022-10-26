@@ -10,31 +10,6 @@
 - **Front-end:** [React](https://reactjs.org/)
 - **Animation:** [Framer](https://www.framer.com/docs/animation/)
 - **Deployment:** [Vercel](https://vercel.com/)
-
-## Running locally
-
-1. Clone this repo:
-
-```sh
-$ git clone https://github.com/zenorocha/zenorocha.com.git
-```
-
-2. Then go to the project's folder:
-
-```sh
-cd zenorocha.com
-```
-
-3. Install all dependencies:
-
-```sh
-npm install
-```
-
-4. Run locally:
-
-```sh
-npm run dev
 ```
 
 ## File structure
@@ -79,7 +54,3 @@ Here you'll find all the main pages of the site.
 ### [public](https://github.com/zenorocha/zenorocha.com/blob/master/public)
 
 Here you'll find all the CSS, images, and font files.
-
-## License
-
-[MIT License](http://zenorocha.mit-license.org/) © Zeno Rocha

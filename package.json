@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "zenorocha.com",
+  "name": "hb.jiang",
   "version": "5.0.0",
   "scripts": {
     "dev": "next dev",
