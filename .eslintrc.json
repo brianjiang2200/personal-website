@@ -4,6 +4,13 @@
     "react/jsx-no-target-blank": 0,
     "react/jsx-wrap-multilines": 0,
     "react/no-unescaped-entities": 0,
-    "import/no-anonymous-default-export": 0
-  }
+    "import/no-anonymous-default-export": 0,
+    "no-unused-vars": "off", // or "@typescript-eslint/no-unused-vars": "off",
+		"unused-imports/no-unused-imports": "error",
+		"unused-imports/no-unused-vars": [
+			"warn",
+			{ "vars": "all", "varsIgnorePattern": "^_", "args": "after-used", "argsIgnorePattern": "^_" }
+		]
+  },
+  "plugins": ["unused-imports"]
 }
