@@ -59,7 +59,7 @@ function About(props) {
           </Paragraph>
           <Paragraph>
             I enjoy thinking about things at a high level, but my <strong>approach is modest - I'm open to new ideas from anyone</strong>.
-            The best kind of team work hard, but don't take themselves too seriously.
+            The best kind of team works hard, but doesn't take themselves too seriously.
             Outside of work, I'm probably playing chess/poker, watching shows with friends, 
             or doing Karaoke.
           </Paragraph>
