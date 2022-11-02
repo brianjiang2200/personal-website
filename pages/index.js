@@ -26,8 +26,8 @@ export default function Index(props) {
         <meta content={title} property="og:title" />
         <meta content={description} name="description" />
         <meta content={description} property="og:description" />
-        <meta content="https://zenorocha.com" property="og:url" />
-        <meta content={`https://zenorocha.com${image}`} property="og:image" />
+        <meta content="https://hbjiang.vercel.app" property="og:url" />
+        <meta content={`https://hbjiang.vercel.app${image}`} property="og:image" />
       </Head>
 
       <Navbar />

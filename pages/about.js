@@ -4,21 +4,16 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { parseISO, format, intervalToDuration } from 'date-fns'
 import Base from '../layouts/Base'
-import { ButtonPrimary } from '../components/ButtonPrimary'
-import Pronunciation from '../components/Pronunciation'
 import Toast from '../components/Toast'
 import stripHtml from '../lib/strip-html'
 import items from '../data/about'
-import Lottie from 'lottie-react'
-import copyBioIcon from '../public/static/icons/copy-bio.json'
-import downloadIcon from '../public/static/icons/download.json'
 
 export async function getStaticProps() {
   const meta = {
-    title: 'About // Zeno Rocha',
+    title: 'About // Brian Jiang',
     description:
       "Zeno Rocha is a Brazilian creator and programmer. He currently lives in Los Angeles, California, where he's the VP of Developer Experience at WorkOS. His lifelong appreciation for building software and sharing knowledge led him to speak in over 110 conferences worldwide. His passion for open source put him on the top 20 most active users on GitHub at age 22. Before moving to the US, Zeno developed multiple applications, mentored startups, and worked at major companies in Latin America, such as Globo and Petrobras.",
-    tagline: 'Create. Share. Repeat.',
+    tagline: 'Learning Day by Day.',
     image: '/static/images/about-bw.jpg',
     primaryColor: 'pink',
     secondaryColor: 'purple',
@@ -32,8 +27,6 @@ function About(props) {
   const [toastTitle, setToastTitle] = React.useState('')
   const [toastDescription, setToastDescription] = React.useState('')
   const [showToast, setShowToast] = React.useState(false)
-  const copyBioRef = React.useRef()
-  const downloadRef = React.useRef()
 
   const renderIntro = () => {
     return (
@@ -41,9 +34,9 @@ function About(props) {
         <Section>
           <Image
             alt="Zeno"
-            src="/static/images/zeno-bw.jpg"
-            width="336"
-            height="336"
+            src="/static/images/hbjiang.jpg"
+            width="316"
+            height="356"
             placeholder="blur"
             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAP0lEQVQImQE0AMv/AFBQUJKSkqmpqaOjowCurq7v7+/Jycm5ubkA////jIyMn5+fg4ODADAwMD09PWlpaQAAAApRGnEHblMWAAAAAElFTkSuQmCC"
             priority
@@ -56,67 +49,22 @@ function About(props) {
               '@bp2': { marginTop: '-6px' },
             }}
           >
-            <strong>Hey, I'm Zeno Rocha</strong>
-            <Pronunciation />
-            I started as a software engineer back in 2009, working with Flash.
+            <strong>Hey, I'm Brian. </strong>
+            I'm a software developer currently based in the Greater Toronto Area,
+            graduating soon from the University of Waterloo in Computer Engineering.
           </Paragraph>
           <Paragraph>
-            I'm currently the <strong>VP of Developer Experience</strong> at
-            WorkOS. Before that, I was the CPO at Liferay Cloud. I'm originally
-            from Brazil and now living in{' '}
-            <strong>Los Angeles, California</strong> with my amazing wife and
-            beautiful daughter.
+            I'm currently a full stack developer at RideCo, a rapidly growing on-demand
+            transit startup - paving opportunities with new tooling initiatives.   
           </Paragraph>
           <Paragraph>
-            <strong>I love dark mode</strong>, open source, and side projects.
-            When I'm not working, I like running, watching movies, and{' '}
-            <strong>eating cheese</strong>.
+            I enjoy thinking about things at a high level, but my <strong>approach is modest - I'm open to new ideas from anyone</strong>.
+            The best kind of team work hard, but don't take themselves too seriously.
+            Outside of work, I'm probably playing chess/poker, watching shows with friends, 
+            or doing Karaoke.
           </Paragraph>
         </Section>
       </Container>
-    )
-  }
-
-  const renderBio = () => {
-    const btnStyle = { display: 'inline-flex', justifyContent: 'center', alignItems: 'center' }
-    const iconStyle = { width: 24, height: 24, marginRight: 8 }
-
-    return (
-      <div>
-        <p>
-          This is made for journalists, podcast hosts, and event organizers to
-          copy-and-paste.
-        </p>
-        <blockquote>
-          <p>{description}</p>
-        </blockquote>
-        <ButtonsContainer>
-          <ButtonPrimary
-            as="button"
-            style={btnStyle}
-            onClick={copyBio}
-            onMouseEnter={() => copyBioRef.current?.play()}
-            onMouseLeave={() => copyBioRef.current?.stop()}
-          >
-            <Lottie lottieRef={copyBioRef} style={iconStyle} animationData={copyBioIcon} loop={false} autoplay={false} />
-            Copy Bio
-          </ButtonPrimary>
-          <span style={{ margin: '0 20px 0 10px' }}>•</span>
-          <ButtonPrimary
-            as="a"
-            download
-            role="button"
-            href="/static/images/zeno.png"
-            style={btnStyle}
-            onClick={downloadHeadshot}
-            onMouseEnter={() => downloadRef.current?.play()}
-            onMouseLeave={() => downloadRef.current?.stop()}
-          >
-            <Lottie lottieRef={downloadRef} style={iconStyle} animationData={downloadIcon} loop={false} autoplay={false} />
-            Download Headshot
-          </ButtonPrimary>
-        </ButtonsContainer>
-      </div>
     )
   }
 
@@ -166,21 +114,6 @@ function About(props) {
     return durationStr
   }
 
-  const downloadHeadshot = () => {
-    setToastTitle('Downloading...')
-    setToastDescription('You can now add this photo to your fancy site.')
-    setShowToast(true)
-  }
-
-  const copyBio = e => {
-    e.preventDefault()
-    navigator.clipboard.writeText(description)
-
-    setToastTitle('Copied :D')
-    setToastDescription('You can now paste it anywhere.')
-    setShowToast(true)
-  }
-
   return (
     <>
       <Head>
@@ -188,16 +121,13 @@ function About(props) {
         <meta content={title} property="og:title" />
         <meta content={stripHtml(description)} name="description" />
         <meta content={stripHtml(description)} property="og:description" />
-        <meta content="https://zenorocha.com/about" property="og:url" />
-        <meta content={`https://zenorocha.com${image}`} property="og:image" />
+        <meta content="https://hbjiang.vercel.app/about" property="og:url" />
+        <meta content={`https://hbjiang.vercel.app${image}`} property="og:image" />
       </Head>
 
       {renderIntro()}
 
-      <h2>Bio</h2>
-      {renderBio()}
-
-      <h2>Career</h2>
+      <h2>Experience</h2>
       {renderAll()}
 
       <Toast
@@ -220,11 +150,6 @@ const Container = styled('div', {
 
 const Paragraph = styled('p', {
   '@bp2': { margin: '15px 0' },
-})
-
-const ButtonsContainer = styled('p', {
-  display: 'flex',
-  alignItems: 'center',
 })
 
 const Section = styled('div', {

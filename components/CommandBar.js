@@ -17,12 +17,14 @@ import copyLinkIcon from '../public/static/icons/copy-link.json'
 import emailIcon from '../public/static/icons/email.json'
 import sourceIcon from '../public/static/icons/source.json'
 import homeIcon from '../public/static/icons/home.json'
+import aboutIcon from '../public/static/icons/about.json'
 
 export default function CommandBar(props) {
   const copyLinkRef = useRef()
   const emailRef = useRef()
   const sourceRef = useRef()
   const homeRef = useRef()
+  const aboutRef = useRef()
   const router = useRouter()
   const [showToast, setShowToast] = useState(false)
 
@@ -70,6 +72,15 @@ export default function CommandBar(props) {
       section: 'Go To',
       perform: () => router.push('/'),
       icon: <Lottie lottieRef={homeRef} style={iconSize} animationData={homeIcon} loop={false} autoplay={false} />,
+    },
+    {
+      id: 'about',
+      name: 'About',
+      shortcut: ['g', 'a'],
+      keywords: 'go-about',
+      section: 'Go To',
+      perform: () => router.push('/about'),
+      icon: <Lottie lottieRef={aboutRef} style={iconSize} animationData={aboutIcon} loop={false} autoplay={false} />,
     },
   ]
 
