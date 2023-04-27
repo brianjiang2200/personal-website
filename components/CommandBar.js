@@ -61,7 +61,7 @@ export default function CommandBar(props) {
       keywords: 'view-source',
       section: 'General',
       perform: () =>
-        window.open('https://github.com/brianjiang2200/hb.jiang', '_blank'),
+        window.open('https://github.com/brianjiang2200/personal-website', '_blank'),
       icon: <Lottie lottieRef={sourceRef} style={iconSize} animationData={sourceIcon} loop={false} autoplay={false} />,
     },
     {

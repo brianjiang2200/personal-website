@@ -22,7 +22,7 @@ function Contact(props) {
   const { title, image } = props
   const description = `
     If for any reason you'd like to reach out to me, <strong>I'd love to chat with you</strong>. 
-    I'm a busy person, so I can't promise that I'll reply to your email right away, but I'll try my best to respond in a timely manner.
+    I can't promise that I'll reply to your email right away, but I'll try my best to respond in a timely manner.
   `
   const [isEmailSent, setIsEmailSent] = React.useState(undefined)
   const [showToast, setShowToast] = React.useState(false)

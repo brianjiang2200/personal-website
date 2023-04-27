@@ -50,18 +50,18 @@ function About(props) {
             }}
           >
             <strong>Hey, I'm Brian. </strong>
-            I'm a software developer currently based in the Greater Toronto Area,
-            graduating soon from the University of Waterloo in Computer Engineering.
+            I'm a software developer currently based in the Greater Toronto Area, and
+            recent graduate from the University of Waterloo in Computer Engineering.
           </Paragraph>
           <Paragraph>
-            I'm currently a full stack developer at RideCo, a rapidly growing on-demand
-            transit startup - paving opportunities with new tooling initiatives.   
+            I was most recently a full stack developer at RideCo, a rapidly growing on-demand
+            transit startup - paving opportunities with new tooling initiatives. Now, I'm currently
+            seeking the next opportunity in my career to continue making what I hope to be meaningful contributions.
           </Paragraph>
           <Paragraph>
-            I enjoy thinking about things at a high level, but my <strong>approach is modest - I'm open to new ideas from anyone</strong>.
-            The best kind of team works hard, but doesn't take themselves too seriously.
-            Outside of work, I'm probably playing chess/poker, watching shows with friends, 
-            or doing Karaoke.
+            I enjoy thinking about things at a high level, but my <strong>approach is modest - I'm always open to new ideas from anyone</strong>.
+            I think the best kind of team works hard and cohesively, but simultaneously enjoys the work and doesn't take itself too seriously.
+            Outside of work, you might find me playing chess/poker, watching shows with friends, or doing Karaoke.
           </Paragraph>
         </Section>
       </Container>
