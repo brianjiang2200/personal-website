@@ -37,7 +37,7 @@ export default function Index(props) {
             <div>
               <h1>{title}</h1>
               <p>
-                <strong>Looking Forward to the Next Challenge</strong>
+                <strong>Always Looking for the Next Challenge</strong>
                 <br />
                 {description}
               </p>

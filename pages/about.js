@@ -11,9 +11,7 @@ import items from '../data/about'
 export async function getStaticProps() {
   const meta = {
     title: 'About // Brian Jiang',
-    description:
-      "Zeno Rocha is a Brazilian creator and programmer. He currently lives in Los Angeles, California, where he's the VP of Developer Experience at WorkOS. His lifelong appreciation for building software and sharing knowledge led him to speak in over 110 conferences worldwide. His passion for open source put him on the top 20 most active users on GitHub at age 22. Before moving to the US, Zeno developed multiple applications, mentored startups, and worked at major companies in Latin America, such as Globo and Petrobras.",
-    tagline: 'Learning Day by Day.',
+    description: 'Software Developer based in Toronto, Canada.',
     image: '/static/images/about-bw.jpg',
     primaryColor: 'pink',
     secondaryColor: 'purple',
@@ -33,12 +31,10 @@ function About(props) {
       <Container>
         <Section>
           <Image
-            alt="Zeno"
-            src="/static/images/hbjiang.jpg"
+            alt="Brian Jiang"
+            src="/static/images/hbjiang-sendai.jpg"
             width="316"
             height="356"
-            placeholder="blur"
-            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAP0lEQVQImQE0AMv/AFBQUJKSkqmpqaOjowCurq7v7+/Jycm5ubkA////jIyMn5+fg4ODADAwMD09PWlpaQAAAApRGnEHblMWAAAAAElFTkSuQmCC"
             priority
           />
         </Section>
@@ -54,14 +50,15 @@ function About(props) {
             recent graduate from the University of Waterloo in Computer Engineering.
           </Paragraph>
           <Paragraph>
-            I was most recently a full stack developer at RideCo, a rapidly growing on-demand
-            transit startup - paving opportunities with new tooling initiatives. Now, I'm currently
-            seeking the next opportunity in my career to continue making what I hope to be meaningful contributions.
+            I am currently a full stack developer at RideCo, a rapidly growing on-demand
+            transit startup - paving opportunities with new tooling initiatives. I'm using
+            this crucial time in my career to continue making what I hope to be meaningful contributions,
+            while also achieving professional and personal growth.
           </Paragraph>
           <Paragraph>
             I enjoy thinking about things at a high level, but my <strong>approach is modest - I'm always open to new ideas from anyone</strong>.
-            I think the best kind of team works hard and cohesively, but simultaneously enjoys the work and doesn't take itself too seriously.
-            Outside of work, you might find me playing chess/poker, watching shows with friends, or doing Karaoke.
+            I think my ideal team works hard and cohesively, but simultaneously enjoys the work and doesn't always take itself too seriously.
+            Outside of work, you might find me improving at chess or poker, watching shows with friends, or doing Karaoke.
           </Paragraph>
         </Section>
       </Container>

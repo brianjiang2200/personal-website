@@ -3,7 +3,15 @@ const items = [
     jobTitle: 'Full Stack Developer',
     company: 'RideCo',
     companyUrl: 'https://rideco.com',
+    startDate: '2023-06-12',
+    location: 'Hybrid',
+  },
+  {
+    jobTitle: 'Full Stack Developer',
+    company: 'RideCo',
+    companyUrl: 'https://rideco.com',
     startDate: '2022-09-01',
+    endDate: '2022-12-31',
     location: 'Waterloo, Ontario',
   },
   {
