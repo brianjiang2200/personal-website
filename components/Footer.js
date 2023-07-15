@@ -14,13 +14,13 @@ export default function Footer() {
       icon: 'ri-github-line',
     },
     {
-      title: 'linkedin',
+      title: 'Linkedin',
       url: 'https://linkedin.com/in/brian-jiang-a57846180',
       icon: 'ri-linkedin-line',
     },
     {
-      title: 'lichess',
-      url: 'https://lichess.org/jiangofett',
+      title: 'Chess.com',
+      url: 'https://chess.com/member/jiangofett',
     }
   ]
 
