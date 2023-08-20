@@ -21,6 +21,7 @@ export default function Footer() {
     {
       title: 'Chess.com',
       url: 'https://chess.com/member/jiangofett',
+      icon: 'ri-gamepad-line',
     }
   ]
 

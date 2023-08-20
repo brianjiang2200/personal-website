@@ -9,7 +9,7 @@ import { styled } from '../stitches.config'
 export async function getStaticProps() {
   const meta = {
     title: 'Contact // Brian Jiang',
-    tagline: 'Lets get in touch.',
+    tagline: 'Lets get in touch!',
     image: '/static/images/reminder-bw.jpg',
     primaryColor: 'cyan',
     secondaryColor: 'green',

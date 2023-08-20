@@ -2,7 +2,6 @@ import React from 'react'
 import Head from 'next/head'
 import { AnimateSharedLayout } from 'framer-motion'
 import Base from '../layouts/Base'
-import FeaturedProject from '../components/FeaturedProject'
 import stripHtml from '../lib/strip-html'
 import items from '../data/projects'
 
@@ -10,7 +9,6 @@ export async function getStaticProps() {
   const meta = {
     title: 'Projects // Brian Jiang',
     tagline: 'Work. Hobby. Open Source.',
-    image: '/static/images/projects-bw.jpg',
     primaryColor: 'cyan',
     secondaryColor: 'green',
   }
@@ -19,23 +17,6 @@ export async function getStaticProps() {
 }
 
 function Projects(props) {
-  const renderFeatured = () => {
-    const featured = ['Dracula PRO', 'Clipboard.js', 'LeCheese', '14 Habits']
-
-    return items
-      .map(item => {
-        return item.projects.filter(project => featured.includes(project.title))
-      })
-      .filter(item => {
-        if (item.length > 0) {
-          return item
-        }
-      })
-      .flat()
-      .map((item, index) => {
-        return <FeaturedProject key={index} project={item} />
-      })
-  }
 
   const renderAll = () => {
     return items.map((item, index) => {
@@ -52,20 +33,10 @@ function Projects(props) {
     })
   }
 
-  const getTotalProjects = () => {
-    let total = 0
-
-    for (let i = 0; i < items.length; i++) {
-      total = total + items[i].projects.length
-    }
-
-    return total
-  }
-
   const { title, image } = props
   const description = `
-    I enjoy working on side projects and open source that I feel either have a strong use case
-    or presents a learning opportunity for me. These are some of the different</strong> websites,
+    I enjoy working on projects that I feel either have a strong use case
+    or present a learning opportunity for me. These are some of the different</strong> websites,
     apps, and libraries I contributed to.`
 
   return (

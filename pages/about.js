@@ -22,19 +22,20 @@ export async function getStaticProps() {
 
 function About(props) {
   const { title, description, image } = props
-  const [toastTitle, setToastTitle] = React.useState('')
-  const [toastDescription, setToastDescription] = React.useState('')
+  const [toastTitle] = React.useState('')
+  const [toastDescription] = React.useState('')
   const [showToast, setShowToast] = React.useState(false)
 
   const renderIntro = () => {
     return (
+      <div>
       <Container>
         <Section>
           <Image
             alt="Brian Jiang"
             src="/static/images/hbjiang-sendai.jpg"
             width="316"
-            height="356"
+            height="346"
             priority
           />
         </Section>
@@ -46,22 +47,26 @@ function About(props) {
             }}
           >
             <strong>Hey, I'm Brian. </strong>
-            I'm a software developer currently based in the Greater Toronto Area, and
-            recent graduate from the University of Waterloo in Computer Engineering.
+            I'm a software developer currently based in Kitchener-Waterloo, and
+            graduate from UWaterloo in Computer Engineering.
           </Paragraph>
           <Paragraph>
             I am currently a full stack developer at RideCo, a rapidly growing on-demand
-            transit startup - paving opportunities with new tooling initiatives. I'm using
-            this crucial time in my career to continue making what I hope to be meaningful contributions,
+            transit startup - paving opportunities to automate support operations with new tooling initiatives. 
+            I'm using this crucial time in my career to continue making what I hope to be meaningful contributions,
             while also achieving professional and personal growth.
-          </Paragraph>
-          <Paragraph>
-            I enjoy thinking about things at a high level, but my <strong>approach is modest - I'm always open to new ideas from anyone</strong>.
-            I think my ideal team works hard and cohesively, but simultaneously enjoys the work and doesn't always take itself too seriously.
-            Outside of work, you might find me improving at chess or poker, watching shows with friends, or doing Karaoke.
           </Paragraph>
         </Section>
       </Container>
+      <div>
+        <Paragraph>
+          Software development is rewarding because I enjoy thinking about things high level, and my <strong>approach is modest - 
+          I'm always open to new ideas</strong>, so I try to absorb as much knowledge as I can.
+          My ideal team works hard and cohesively, but simultaneously enjoys the work and doesn't always take itself too seriously.
+          Outside of work, you might find me improving at chess or poker, watching shows with friends, or doing Karaoke.
+        </Paragraph>
+      </div>
+      </div>
     )
   }
 
