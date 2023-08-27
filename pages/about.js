@@ -129,9 +129,6 @@ function About(props) {
 
       {renderIntro()}
 
-      <h2>Experience</h2>
-      {renderAll()}
-
       <Toast
         title={toastTitle}
         description={toastDescription}

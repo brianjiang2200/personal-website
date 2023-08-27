@@ -4,7 +4,7 @@ import { parseISO, format, intervalToDuration } from 'date-fns'
 import Base from '../layouts/Base'
 import Toast from '../components/Toast'
 import stripHtml from '../lib/strip-html'
-import items from '../data/about'
+import resume from '../data/about'
 
 export async function getStaticProps() {
   const meta = {
@@ -32,7 +32,7 @@ function Career(props) {
   }
 
   const renderExp = () => {
-    return items.map((item, index) => {
+    return resume.map((item, index) => {
       return (
         <div style={{ marginBottom: 40 }} key={index}>
           <h3>{item.jobTitle}</h3>
