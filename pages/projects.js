@@ -9,8 +9,8 @@ export async function getStaticProps() {
   const meta = {
     title: 'Projects // Brian Jiang',
     tagline: 'Work. Hobby. Open Source.',
-    primaryColor: 'cyan',
-    secondaryColor: 'green',
+    primaryColor: 'yellow',
+    secondaryColor: 'pink',
   }
 
   return { props: meta }
