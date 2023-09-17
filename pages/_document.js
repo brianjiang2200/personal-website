@@ -2,6 +2,7 @@ import React from 'react'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { getCssText } from '../stitches.config'
 import { GA_TRACKING_ID } from '../lib/gtag'
+import { CssBaseline } from '@nextui-org/react'
 
 export default class extends Document {
   static async getInitialProps(ctx) {
@@ -15,6 +16,7 @@ export default class extends Document {
     return (
       <Html lang={lang ? lang : 'en-US'}>
         <Head>
+          {CssBaseline.flush()}
           <meta charSet="utf-8" />
           <meta content="Brian Jiang" name="author" />
           <meta property="og:type" content="website" />
@@ -45,6 +47,7 @@ export default class extends Document {
             gtag('config', '${GA_TRACKING_ID}');
           `,
             }}
+
           />
         </Head>
         <Main />

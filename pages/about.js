@@ -34,8 +34,8 @@ function About(props) {
           <Image
             alt="Brian Jiang"
             src="/static/images/hbjiang-sendai.jpg"
-            width="316"
-            height="346"
+            width="300"
+            height="325"
             priority
           />
         </Section>

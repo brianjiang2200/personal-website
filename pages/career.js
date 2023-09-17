@@ -1,6 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 import { parseISO, format, intervalToDuration } from 'date-fns'
+import { Collapse } from '@nextui-org/react'
+
 import Base from '../layouts/Base'
 import Toast from '../components/Toast'
 import stripHtml from '../lib/strip-html'
@@ -25,18 +27,21 @@ function Career(props) {
   const [showToast, setShowToast] = React.useState(false)
 
   const renderSkills = () => {
-    return skills.map((item, index) => {
-      return (
-        <div style={{ marginBottom: 40 }} key={index}>
-          <h3>{item.category}</h3>
-          <ul style={{ margin: 0, paddingLeft: 20 }}>
-            {item.details.map((detail, index) => {
-              return <li key={index}>{detail}</li>
-            })}
-          </ul>
-        </div>
-      )
-    })
+    return (
+      <Collapse.Group accordion={false} splitted shadow> 
+        {skills.map((item, index) => {
+          return (
+            <Collapse title={item.category} key={index}>
+              <ul style={{ margin: 0, paddingLeft: 20 }}>
+                {item.details.map((detail, index) => {
+                  return <li key={index}>{detail}</li>
+                })}
+              </ul>
+            </Collapse>
+          )}
+        )}
+      </Collapse.Group>
+    )
   }
 
   const renderExp = () => {
@@ -96,7 +101,7 @@ function Career(props) {
         <meta content={`https://hbjiang.vercel.app${image}`} property="og:image" />
       </Head>
 
-      <h2>Skills - <i>Things I'm Reasonably Good At.</i></h2>
+      <h2>Things Im Reasonably Good At.</h2>
       {renderSkills()}
 
       <h2>Experience</h2>

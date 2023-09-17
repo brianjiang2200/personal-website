@@ -1,6 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 import { AnimateSharedLayout } from 'framer-motion'
+import { Text } from '@nextui-org/react'
+
 import Base from '../layouts/Base'
 import stripHtml from '../lib/strip-html'
 import items from '../data/projects'
@@ -68,7 +70,7 @@ function ProjectItem(props) {
       <a href={project.url} target="_blank">
         {project.title}
       </a>
-      <div>{project.description}</div>
+      <Text color="#A9A2A5">{project.description}</Text>
     </li>
   )
 }
