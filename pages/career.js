@@ -5,6 +5,7 @@ import { Collapse } from '@nextui-org/react'
 
 import Base from '../layouts/Base'
 import Toast from '../components/Toast'
+import { Icon } from '../components/Icon'
 import stripHtml from '../lib/strip-html'
 import resume from '../data/about'
 import skills from '../data/skills'
@@ -31,7 +32,12 @@ function Career(props) {
       <Collapse.Group accordion={false} splitted shadow> 
         {skills.map((item, index) => {
           return (
-            <Collapse title={item.category} key={index}>
+            <Collapse 
+              title={item.category}
+              key={index}
+              contentLeft={
+                <Icon className={item.image} />
+              }>
               <ul style={{ margin: 0, paddingLeft: 20 }}>
                 {item.details.map((detail, index) => {
                   return <li key={index}>{detail}</li>

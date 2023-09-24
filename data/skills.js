@@ -16,7 +16,7 @@ const skills = [
         "Bootstrap",
         "Tailwind",
       ],
-      image: null,
+      image: "ri-javascript-line",
     },
     {
         category: "Backend / General Purpose Programming",
@@ -35,16 +35,16 @@ const skills = [
             "Linux",
             "Bash",
         ],
-        image: null,
+        image: "ri-server-line",
     },
     {
-        category: "Other Languages I've Worked With",
+        category: "Languages I'm Still Learning",
         details: [
             "Java",
             "Rust",
             "Scala",
         ],
-        image: null,
+        image: "ri-code-line",
     },
     {
         category: "Services & Build Tools",
@@ -61,7 +61,8 @@ const skills = [
             "Elastic Beanstalk",
             "Vercel",
             "Apache",
-        ]
+        ],
+        image: "ri-cloud-line",
     },
     {
         category: "System Design",
@@ -77,7 +78,8 @@ const skills = [
             "Distributed Systems",
             "Performative Systems",
             "Horizontal & Vertical Scaling",
-        ]
+        ],
+        image: 'ri-palette-line',
     },
     {
         category: "CI/CD & QA",
@@ -91,7 +93,8 @@ const skills = [
             "Selenium",
             "JMeter",
             "Linters & Formatters (check out Ruff for python!)",
-        ]
+        ],
+        image: "ri-tools-line",
     }
   ]
   
