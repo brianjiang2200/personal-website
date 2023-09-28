@@ -50,7 +50,7 @@ function About(props) {
           </Paragraph>
           <Paragraph>
             I am currently a full stack developer at RideCo, a rapidly growing on-demand
-            transit startup - paving opportunities to automate support operations with new tooling initiatives. 
+            transit startup - paving opportunities by automating client success operations with new tooling initiatives. 
             I'm using this crucial time in my career to continue making what I hope to be meaningful contributions,
             while also achieving professional and personal growth.
           </Paragraph>
@@ -59,7 +59,7 @@ function About(props) {
       <div>
         <Paragraph>
           Software development is rewarding because I enjoy thinking about things high level, and my <strong>approach is modest - 
-          I'm always open to new ideas</strong>, so I try to absorb as much knowledge as I can.
+          I'm always open to new ideas</strong>, and try to absorb as much knowledge as I can.
           My ideal team works hard and cohesively, but simultaneously enjoys the work and doesn't always take itself too seriously.
           Outside of work, you might find me improving at chess or poker, watching shows with friends, or doing Karaoke.
         </Paragraph>

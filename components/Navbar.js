@@ -11,6 +11,7 @@ export default function Navbar() {
     'About',
     'Career',
     'Projects',
+    'Hobbies',
     'Contact',
   ]
   const [hovered, setHovered] = useState('')
