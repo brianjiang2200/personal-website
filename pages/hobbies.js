@@ -6,7 +6,7 @@ import { Collapse } from '@nextui-org/react'
 import Base from '../layouts/Base'
 import Toast from '../components/Toast'
 import stripHtml from '../lib/strip-html'
-import { pokersrc } from '../data/poker'
+import { pokersrc1, pokersrc2, pokersrc3 } from '../data/poker'
 
 export async function getStaticProps() {
   const meta = {
@@ -50,8 +50,8 @@ function Hobbies(props) {
                   Chess has been a mainstay in my life for close to a decade now, and it's been a 
                   source of everything from passion, pride, to frustration and self-doubt. It has been
                   a humbling and grueling journey in the competitive chess world, especially as someone
-                  who is considered to have started "late" and balancing their studies. While I consider
-                  my achievements in chess to be great during this time (with hopefully more to come!), 
+                  that started playing relatively late and was simultaneously focused on studies. While I 
+                  consider my achievements in chess to be great during this time (with hopefully more to come!), 
                   one of the most rewarding aspects of being a chess player are the talented friends and 
                   people you'll share experiences with throughout the years.
               </Paragraph>
@@ -62,7 +62,7 @@ function Hobbies(props) {
                   '@bp2': { marginTop: '-6px' },
                   }}
               >
-                Pictured left: GM Andrew Tang (PenguinGM1) and I (Not a GM) meeting up at the Washington
+                Pictured left: GM Andrew Tang (known as Penguingm1) and I meeting up at the Washington
                 Intl. 2022.
               </Paragraph>
           </Section>
@@ -100,6 +100,18 @@ function Hobbies(props) {
     )
   }
 
+  const renderPokerHistory = (title, src) => {
+    return (
+      <div>
+        <h5>{title}</h5>
+        <iframe 
+          width="750" height="460" seamless frameborder="0"
+          src={src}>  
+        </iframe>
+      </div>
+    )
+  }
+
   const renderPoker = () => {
     return (
       <div>
@@ -112,10 +124,9 @@ function Hobbies(props) {
         </Container>
         <div>
           <h4>Ups and Downs So Far</h4>
-          <iframe 
-            width="739" height="457" seamless frameborder="0" scrolling="no"
-            src={pokersrc}>  
-          </iframe>
+          { renderPokerHistory("Beginnings", pokersrc1) }
+          { renderPokerHistory("Sticking to a Routine", pokersrc2) }
+          { renderPokerHistory("Sessions since October 2023", pokersrc3) }
         </div>
       </div>
     )

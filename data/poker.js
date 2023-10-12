@@ -1,1 +1,3 @@
-export const pokersrc = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTuvqGnkWCyGKzzXf16GdyKoMYs-d0AZlHjY3r_7xVGXI7s-Km3mp4ARiIJQiDA7LxD8ZRZD5b1C5fu/pubchart?oid=1947896608&amp;format=interactive"
+export const pokersrc1 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTuvqGnkWCyGKzzXf16GdyKoMYs-d0AZlHjY3r_7xVGXI7s-Km3mp4ARiIJQiDA7LxD8ZRZD5b1C5fu/pubchart?oid=506355307&amp;format=interactive"
+export const pokersrc2 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTuvqGnkWCyGKzzXf16GdyKoMYs-d0AZlHjY3r_7xVGXI7s-Km3mp4ARiIJQiDA7LxD8ZRZD5b1C5fu/pubchart?oid=1947896608&amp;format=interactive"
+export const pokersrc3 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTuvqGnkWCyGKzzXf16GdyKoMYs-d0AZlHjY3r_7xVGXI7s-Km3mp4ARiIJQiDA7LxD8ZRZD5b1C5fu/pubchart?oid=1960709105&amp;format=interactive"
