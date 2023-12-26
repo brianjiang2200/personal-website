@@ -62,7 +62,7 @@ function Hobbies(props) {
                   '@bp2': { marginTop: '-6px' },
                   }}
               >
-                Pictured left: GM Andrew Tang (known as Penguingm1) and I meeting up at the Washington
+                Pictured left: GM Andrew Tang "Penguingm1" and I meeting up at the Washington
                 Intl. 2022.
               </Paragraph>
           </Section>
@@ -117,9 +117,9 @@ function Hobbies(props) {
       <div>
         <Container>
           <Paragraph>
-            Poker is a discipline of endless patience and self-control. It shows you that achieving results is not only
-            about optimizing your technique/strategy, but also about optimizing your lifestyle to make
-            that possible. Champions need to behave like champions, on and off the felt.
+            Poker is a discipline of endless patience and self-control. Playing it has shown me that 
+            achieving results isn't limited to honing my technique/strategy, but also about optimizing my lifestyle 
+            to make them possible. Champions need to behave like champions, on and off the felt.
           </Paragraph>
         </Container>
         <div>
